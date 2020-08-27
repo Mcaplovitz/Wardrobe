@@ -10,9 +10,8 @@ document.addEventListener('DOMContentLoaded', function () { //loads script when 
             if (currTab) { //if on the current tab, get the contents of the page url
                 var corsOverride = "https://cors-anywhere.herokuapp.com/" + currTab.url; //overrides the CORS protocall
                 //console.log(corsOverride);
-                pageContents = file_get_contents(corsOverride, console.log);
-                //pageContents.match("<img.* src=")
-                const paragraph = 'The <img test src="quick"> brown fox jumps over the lazy dog. It barked.';
+                pageContents = file_get_contents(corsOverride, console.log)
+                const paragraph = 'The <img test src="quick"> brown fox jumps over the lazy dog. It barked.'; //this needs to be changed so that the page scan goes into this constant
                 const regex = /\<img(.*)src=\"(.*)"/;
                 const found = paragraph.matchAll(regex)[2];
 
