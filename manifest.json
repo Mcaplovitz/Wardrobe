@@ -2,7 +2,7 @@
   "name": "Wardrobe",
   "version": "0.1",
   "description": "A way to keep your clothes from all over the internet",
-  "manifest_version": 2,
+  "manifest_version": 3,
 
   "background": {
     "scripts": [
