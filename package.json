@@ -1,5 +1,9 @@
 {
+  "type": "module",
+  
   "dependencies": {
     "python-shell": "^3.0.1"
   }
+  
+    
 }

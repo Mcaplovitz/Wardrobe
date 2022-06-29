@@ -1,11 +1,8 @@
 //get contents of page
-<script type="module">
-    import {PythonShell} from 'python-shell';
-</script>
-    let options = {
+import {PythonShell} from 'python-shell';
+let options = {
     args: (window.location.href, "test")
-    };
-
+};
 document.addEventListener('DOMContentLoaded', function () { //loads script when button pressed
     var checkPageButton = document.getElementById('checkPage');
     var page;
