@@ -1,9 +1,5 @@
 //get contents of page
 document.addEventListener('DOMContentLoaded', function () { //loads script when button pressed
-    import {PythonShell} from 'python-shell';
-    let options = {
-    args: (window.location.href, "test")
-    };
     var checkPageButton = document.getElementById('checkPage');
     var page;
     checkPageButton.addEventListener('click', function () { //watches for the button press 
