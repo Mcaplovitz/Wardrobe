@@ -1,22 +1,29 @@
 {
-  "name": "Wardrobe",
-  "version": "0.1",
-  "description": "A way to keep your clothes from all over the internet",
-  "manifest_version": 3,
+    "name": "Wardrobe",
+    "version": "0.1",
+    "description": "A way to keep your clothes from all over the internet",
+    "manifest_version": 3,
 
-  "background": {
-    "service worker": [
-      "background.js"
-    ]
-  },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "all_frames": false,
+        "js": ["content.js"],
+        "css": ["style.css"]
+    }],
 
-  "permissions": [
-    "tabs"
-  ],
+    "background": {
+        "service worker": [
+            "background.js"
+        ]
+    },
 
-  "action": {
-    "default_popup": "popup.html"
-  }
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+
+    "action": {
+        "default_popup": "popup.html"
+    }
 
 }
-

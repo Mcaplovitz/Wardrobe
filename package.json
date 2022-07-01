@@ -1,9 +1,9 @@
 {
-  "type": "module",
-  
-  "dependencies": {
-    "python-shell": "^3.0.1"
-  }
-  
-    
+    "scripts": {
+        "build": "browserify content.js -o bundle.js"
+    },
+    "type": "module",
+    "dependencies": {
+        "browserfy": "^1.0.0"
+    }
 }
